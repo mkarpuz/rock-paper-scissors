@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Rock Paper Scissors Console Game</title>
+    </head>
+    <body>
+        <script>
+
+            console.log("Test")
+            /* getComputerChoice 
+            Description: The function randomly selects one of the three entity: Rock, Paper or Scissors.
+            Input: the function call
+            Output: one of the three variables randomly.
+            Tools: math random function comes up with a numeric value between 0-1. 
+            Pseudo code: 
+            -define variable rock
+            -define variable paper
+            -define variable scissors
+            -Use the random.Math method to call a numeric value store it in a variable
+            -If the value is smaller than 0.33-rock,
+             if between 0.33-0.67 paper, 
+             if between 0.77-1 scssiors. 
+            -Print the result
+ne variable scissors 
+
+            */
+
+
+           
+            function getComputerChoice(){
+                // Define variable rock
+                let rock = "rock";
+                // Define variable paper
+                let paper = "paper";
+                // Define variable scissor
+                let scissor = "scissor";
+                // Use the Math.random method to call a numeric value, store it in a variable
+                let number = Math.random();  
+                // If the value quals or smaller than 0.33 return rock    
+                if (number <= 0.33){
+                    return console.log(rock);
+                // if between 0.33-0.67 return paper 
+                } else if (0.33 < number && number < 0.67) {
+                    return console.log(paper);
+                // If the value equals or between  0.67-1 return scissor
+                } else 
+                    return console.log(scissor);
+                };
+            
+            getComputerChoice();
+            getComputerChoice();
+            getComputerChoice();
+            getComputerChoice();
+            getComputerChoice();
+            
+            
+        </script>
+    </body>
+
+
+
+
+
+
+</html>
